@@ -1,0 +1,13 @@
+models:
+  - name: stg_crypto_prices
+    columns:
+      - name: coin_id
+        tests:
+          - not_null
+      - name: price
+        tests:
+          - not_null
+      - name: currency
+        tests:
+          - accepted_values:
+              values: ["usd","idr","cny","jpy","eur","sgd"]

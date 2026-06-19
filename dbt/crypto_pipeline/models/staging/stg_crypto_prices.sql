@@ -1,0 +1,1 @@
+select coin_id, currency, price, market_cap, change_24h, volume_24h, TIMESTAMP_SECONDS(last_updated) as last_updated, fetched_at from {{source('crypto_raw','crypto_prices')}}

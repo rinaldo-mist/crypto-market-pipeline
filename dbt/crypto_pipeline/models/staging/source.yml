@@ -1,0 +1,7 @@
+sources:
+  - name: crypto_raw
+    database: data-engineering-crypto
+    schema: crypto_raw
+    tables:
+      - name: crypto_prices
+        description: "This table contains the raw cryptocurrency price data."
