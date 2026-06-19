@@ -38,7 +38,7 @@ profile_config = ProfileConfig(
 )
 
 execution_config = ExecutionConfig(
-    dbt_executable_path="/opt/airflow/dbt_venv/bin/dbt"
+    dbt_executable_path="/opt/airflow/dbt_venv/bin/dbt" # dbt is in virtual environment to avoid dependency version conflicts with airflow
 )
 
 def _fetch_and_store(**context):
